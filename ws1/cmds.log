@@ -1,0 +1,21 @@
+echo $shell
+echo $SHELL
+git
+git config --list
+wget www.github.com
+cd ~
+dir
+cd github
+dir
+mkdir cs131
+cd cs131/
+mkdir ws1
+cd ws1/
+wget www.github.com
+dir
+git init
+git remote add origin git@github.com:Brabantia/cs131.git
+git status
+dir
+cd ..
+dir
