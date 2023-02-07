@@ -1,0 +1,166 @@
+    1  passwd
+    2  wget www.github.com
+    3  exit
+    4  cd cs131/
+    5  mkdir ws1
+    6  dir
+    7  mv index.html ws1
+    8  ls -latr
+    9  mkdir clas_example
+   10  rmdir clas_example/
+   11  dir
+   12  mkdir class_example
+   13  cd class_example/
+   14  mkdir c02_01
+   15  cd c02_01/
+   16  touch b.txt
+   17  touch a.txt
+   18  touch aa.txt
+   19  ls ?.txt
+   20  ls -l ?.txt
+   21  find ./ -type f -name "*.txt"
+   22  cd ..
+   23  cd ws1
+   24  history > cmds.log
+   25  head cmds.log
+   26  cd ..
+   27  cd ws1
+   28  dir
+   29  head index.html
+   30  head --help
+   31  head -c 25 index.html 
+   32  head -n 25 index.html 
+   33  cd ..
+   34  git status
+   35  git remode add --help
+   36  git remote --help
+   37  git remote add git@github.com:Brabantia/cs131.git
+   38  git clone git@github.com:Brabantia/cs131.git
+   39  git remote add cs131 git@github.com:Brabantia/cs131.git
+   40  git status
+   41  git add .
+   42  git commit -m "first proper commit of ws1"
+   43  git push
+   44  git status
+   45  git remote add github git@github.com:Brabantia/cs131.git
+   46  git push github
+   47  git push --set-upstream github master
+   48  cd class_example/
+   49  cd c02_01/
+   50  nano feb1.txt
+   51  cd ..
+   52  [yorick23sp@sjsu cs131]$ git push --set-upstream github master
+   53  Warning: Permanently added the ECDSA host key for IP address '140.82.114.4' to the list of known hosts.
+   54  git@github.com: Permission denied (publickey).
+   55  fatal: Could not read from remote repository.
+   56  [yorick23sp@sjsu cs131]$ git push --set-upstream github master
+   57  Warning: Permanently added the ECDSA host key for IP address '140.82.114.4' to the list of known hosts.
+   58  git@github.com: Permission denied (publickey).
+   59  fatal: Could not read from remote repository.
+   60  passwd
+   61  history
+   62  dir
+   63  mkdir cs131
+   64  mv index.html cs131/
+   65  dir
+   66  cd cs131/
+   67  git config
+   68  git config --list
+   69  git config --global user.name "Yorick van de Water"
+   70  pwd
+   71  ls -l file
+   72  ls -l index.html 
+   73  git config --global user.email "yvandewater@gmail.com"
+   74  git config --list
+   75  ls
+   76  ls -latr
+   77  ls -lat
+   78  git status
+   79  git init
+   80  wget --help
+   81  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+   82  zip
+   83  unzip --help
+   84  gunzip --help
+   85  dir
+   86  mv amazon_reviews_us_Books_v1_02.tsv.gz cs131
+   87  dir
+   88  cd cs131/
+   89  dir
+   90  mkdir ws2
+   91  mv amazon_reviews_us_Books_v1_02.tsv.gz ws2
+   92  dir
+   93  cd ws2
+   94  dir
+   95  gunzip amazon_reviews_us_Books_v1_02.tsv.gz 
+   96  dir
+   97  head amazon_reviews_us_Books_v1_02.tsv 
+   98  marketplace     customer_id     review_id       product_id      product_parent  product_title   product_category        star_rating     helpful_votes   total_votes  vine    verified_purchase       review_headline review_body     review_date
+   99  US      12076615        RQ58W7SMO911M   0385730586      122662979       Sisterhood of the Traveling Pants (Book 1)      Books   4       2       3       N   Nthis book was a great learning novel!   this boook was a great one that you could learn from. it not only teaches the imponrtance of family and their values but it also deals with basic issues that teens and some kids even deal with.  this book is about 4 best friends who are for the first time in their lives spending their summer apart. one day they are all in one of the girls rooms and finds a pair of pants that were tucked away in her closet.  once all four  of them try them on they realize that there is really something special about these pants.  seeming as how all 4 girls are differnt shapes and sizes and somehow the pants fit all of them,  they realize that these pants were the start of something special.  immediatley following they decided to make up certian rules abut the pants such as you must write the best thing u did while wearing the pants over your summer on the right leg and also some silly things such as to \\"never pick yuor nose while wearing the pants.\\"  this book follows the girls throuh their summers in differnt places of the world and through all of the different obstacles that life takes them through. it can really teach you alot not only about what is going on around you but most imporntantly about yuorself.  i would give this book 4 stars and would reccommend it to anyone who seems the slihgtest bit interested.        2005-10-14
+  100  US      12703090        RF6IUKMGL8SF    0811828964      56191234        The Bad Girl's Guide to Getting What You Want   Books   3       5       5       N   NFun Fluff       If you are looking for something to stimulate your brain, this isn't it.  However, if you are just looking for a good laugh, you'll enjoy The Bad Girl's Guide.  It's funny and light, and definitely a good way to pass a little bit of time.       2005-10-14
+  101  US      12257412        R1DOSHH6AI622S  1844161560      253182049       Eisenhorn (A Warhammer 40,000 Omnibus)  Books   4       1       22      N       N   this isn't a review      never read it-a young relative idicated he liked it and somehow my name popped upon this--no more to say        2005-10-14
+  102  US      50732546        RATOTLA3OF70O   0373836635      348672532       Colby Conspiracy (Colby Agency) Books   5       2       2       N       N       fine author on her A-game    Though she is honored to be Chicago Woman of the Year, Victoria Colby-Camp is more euphoric over the mental improvement that her son Jim has shown recently especially since he and Tasha North fell in love.  Jim was snatched almost twenty years ago when he was seven and turned into the killing Seth whose goal was to murder Victoria for abandoning him.  However, her elation would turn to despair if she knew Seth resurfaced and started to rape a pregnant Tasha.<br /><br />Former military strategist Daniel Marks is in town complements of the Colby Agency that wants to hire him.  Also in Chicago is Emily Hastings whose father a veteran homicide detective was murdered.  She finds letters linking her dad to Victoria, the woman's long ago murdered first husband James, and her dad's first partner Marelyn Rutland that confuses her.  Soon she will meet Daniel and they will be embroiled in the COLBY CONSPIRACY that goes back almost two decades ago.<br /><br />Though the subplots can become confusing at first, once the audience comprehends how this complex superb suspense thriller starts to come together, they will want more Colby Agency tales; (see FILES FROM THE COLBY AGENCY: THE BODYGUARD'S BABY PROTECTIVE CUSTODY).  The ensemble cast is solid as fans will feel with Victoria who has overcome so much tragedy, hope Jim \\"defeats\\" Seth with Tasha at his side, and root for Daniel and Emily to make it while wondering what really happened two decades ago.  A final twist marks a strong Webb of deceit tale that showcases a fine author on her A-game.<br /><br />Harriet Klausner      2005-10-14
+  103  US      51964897        R1TNWRKIVHVYOV  0262181533      598678717       The Psychology of Proof: Deductive Reasoning in Human Thinking  Books   4       0   2N       N       Execellent cursor examination   Review based on a cursory examination by University of Phoenix students in Philosophy 251.  <br />We have found the book to be well organized, and detailed. The structure placed the information in an easy to read and presentable manner. <br />The use of strong and sound proofs by experiment and examples supported the overall logic of reasoning in a clear and concise manner. <br />We have found the book to be well thought out and laid out so the reader can learn and follow what is being explained. <br />   2005-10-14
+  104  US      31048862        R2F53LI9KK9MOY  0316769487      862964341       The Catcher in the Rye  Books   4       2       2       N       N       Interesting, fun.    My only complaint is that this book was a bit repetative, and Holden's vocabulary only consists of 4 words: sonuvabitch, goddamn, lousy and phony. It was still quite humorous and the actual story was interesting.<br /><br />It was easy to read and to relate to, so you should pick it up if you're looking for a fun read. Some people complain about the lack of a plot, but to understand this book you need to read deeper into it. It's actually a lot more than some annoying kid's list of complaints about life.<br /><br />The story is about Holden Caulfield's coming of age and realizing that growing up is not a process that can be stopped. He had a lousy childhood, as he puts it, and wants to save other children from going though the things he experienced in his life. He is telling the story from a mental institution, which he was placed in after returning home from the fourth Prep school he had been kicked out of. He flashes back to the events leading up to his arrival at his home and tells the story of those 3 days.    2005-10-14
+  105  US      53000124        R1KJ6MB7MRSQFF  0805076069      145341889       Bait and Switch: The (Futile) Pursuit of the American Dream     Books   4       9   11       N       N       I viewed this the opposite of Publisher's Weekly ...    This book is chilling and depressing indeed, though very well written and sprinkled with frequent humor.  I was sort of surprised however by the comment in Publisher's Weekly which said that \\"PW suspects that many of those buyers will be disappointed. Ehrenreich can't deliver the promised story because she never managed to get employed in the 'midlevel corporate world' she wanted to analyze.\\"  I never viewed that as being the \\"promised story\\" in the first place.  To me, the primary point of the book was to describe what it was like to actually try to ENTER that world in the first place rather than describing what life was like when she got there--and that she did.  In fact, I actually thought that she \\"lucked out\\" in a sense by having the bizarre, surreal experiences she did--not only did it make for more entertaining and more thought-provoking reading, but in my mind, if she HAD obtained a job right away, it would have taken away the whole raison d'etre of the book.  It would have been a completely different book in which she merely described her (presumably) boring mid-level corporate job, which probably would have been the same from day to day.  Thus, at least for purposes of writing the book, I think she was \\"lucky\\" that things worked out the way they did.  As for the reader who criticized her for not taking the \\"jobs\\" offered by AFLAC and Mary Kay, I thought those comments were bizarre.  I agree with Ms. Ehrenreich's point in that \\"jobs\\" such as these in which the employer offers no salary, no benefits, no office, no help and essentially takes no risk whatsoever can hardly be considered jobs in the traditional sense she was seeking.  In any event, it's really a pretty scary and depressing book, but one which I recommend.    2005-10-14
+  106  US      29732693        R2XIM9LT335WHE  1581603681      640542054       Opening Combination Padlocks: No Tools, No Problem      Books   4       3       10  NN       No Frills - Just The Facts      When looking for &lt;a href=\\"[...]\\">lock picking books&lt;/a>, this one is very informative. It will give one great ideas on opening padlocks, but the language is very basic, no frills here. This is not a romance novel, it's how to open locks without keys, and that's it. You will learn what you need to here. But you should always seek out more knowledge.  2005-10-14
+  107  grep --help
+  108  grep "N*Y*" amazon_reviews_us_Books_v1_02.tsv 
+  109  grep "N*     Y     *" amazon_reviews_us_Books_v1_02.tsv 
+  110  grep "N* Y *" amazon_reviews_us_Books_v1_02.tsv 
+  111  grep "*N\tY\t*" amazon_reviews_us_Books_v1_02.tsv 
+  112  grep "*N      Y*" amazon_reviews_us_Books_v1_02.tsv 
+  113  grep "*N       Y*" amazon_reviews_us_Books_v1_02.tsv 
+  114  grep "\tY\t" amazon_reviews_us_Books_v1_02.tsv 
+  115  grep "\tNY\t" amazon_reviews_us_Books_v1_02.tsv 
+  116  grep "  NY  " amazon_reviews_us_Books_v1_02.tsv 
+  117  grep "\sNY\s" amazon_reviews_us_Books_v1_02.tsv 
+  118  grep "\s\sNY\s\s" amazon_reviews_us_Books_v1_02.tsv 
+  119  grep "\tNY\t" amazon_reviews_us_Books_v1_02.tsv 
+  120  grep "*\tNY\t*" amazon_reviews_us_Books_v1_02.tsv 
+  121  grep "*\tNY\s*" amazon_reviews_us_Books_v1_02.tsv 
+  122  grep "*\sNY\t*" amazon_reviews_us_Books_v1_02.tsv 
+  123  grep ".\sNY\t." amazon_reviews_us_Books_v1_02.tsv 
+  124  grep "./sNY/t." amazon_reviews_us_Books_v1_02.tsv 
+  125  grep ".\tNY\t." amazon_reviews_us_Books_v1_02.tsv 
+  126  grep ".\s\sNY\s\s." amazon_reviews_us_Books_v1_02.tsv 
+  127  grep ".N\tY." amazon_reviews_us_Books_v1_02.tsv 
+  128  grep '\tY\t' amazon_reviews_us_Books_v1_02.tsv 
+  129  grep "\tY\t" amazon_reviews_us_Books_v1_02.tsv 
+  130  egrep "\tY\t" amazon_reviews_us_Books_v1_02.tsv 
+  131  grep -r "        Y        " file_path
+  132  grep -r "        Y        " amazon_reviews_us_Books_v1_02.tsv
+  133  grep -r "  Y  " amazon_reviews_us_Books_v1_02.tsv
+  134  grep -r "Y" amazon_reviews_us_Books_v1_02.tsv
+  135  grep -r \tY\t amazon_reviews_us_Books_v1_02.tsv
+  136  grep -r "\tY\t" amazon_reviews_us_Books_v1_02.tsv
+  137  grep -r "N       Y" amazon_reviews_us_Books_v1_02.tsv 
+  138  grep "N       Y" amazon_reviews_us_Books_v1_02.tsv 
+  139  grep "N\t\t\t\t\t\t\tY" amazon_reviews_us_Books_v1_02.tsv 
+  140  grep "N\s\s\s\s\s\s\sY" amazon_reviews_us_Books_v1_02.tsv 
+  141  dir
+  142  cd cs131/ws2
+  143  dir
+  144  cd lock
+  145  ls -l
+  146  nano lock
+  147  nano ,
+  148  grep "[0-9]+\t[0-9]+\t[0-9]+\t[YN]\t[Y]"
+  149  grep "[0-9]+\t[0-9]+\t[0-9]+\t[YN]\t[Y]" amazon_reviews_us_Books_v1_02.tsv 
+  150  grep "[0-9]+\w+[0-9]+\w+[0-9]+\w+[YN]\w+[Y]" amazon_reviews_us_Books_v1_02.tsv 
+  151  grep "[0-9]+.+[0-9]+.+[0-9]+.+[YN].+[Y]" amazon_reviews_us_Books_v1_02.tsv 
+  152  grep "[0-9]+[[:space:]]+[0-9]+[[:space:]]+[0-9]+[[:space:]]+[YN][[:space:]]+[Y]" amazon_reviews_us_Books_v1_02.tsv 
+  153  grep "[0-9]+[:space:]+[0-9]+[:space:]+[0-9]+[:space:]+[YN][:space:]+[Y]" amazon_reviews_us_Books_v1_02.tsv
+  154  grep "[YN][:space:]+[Y][[:space:]]+" amazon_reviews_us_Books_v1_02.tsv
+  155  grep "[YN][[:space:]]+[Y][[:space:]]+" amazon_reviews_us_Books_v1_02.tsv
+  156  grep -r "[YN][[:space:]]+[Y][[:space:]]+" amazon_reviews_us_Books_v1_02.tsv
+  157  grep -E "[YN][[:space:]]+[Y][[:space:]]+" amazon_reviews_us_Books_v1_02.tsv
+  158  cat amazon_reviews_us_Books_v1_02.tsv | grep -E "[YN][[:space:]]+[Y][[:space:]]+" | wc -l
+  159  cat amazon_reviews_us_Books_v1_02.tsv | grep -E "[YN][[:space:]]+[Y][[:space:]]+" | wc -l > counts.txt
+  160  head counts.txt 
+  161  cat amazon_reviews_us_Books_v1_02.tsv | grep -E "[YN][[:space:]]+[N][[:space:]]+" | wc -l >> counts.txt
+  162  head counts.txt 
+  163  nano counts.txt 
+  164  cmds
+  165  history
+  166  history > cmds.log

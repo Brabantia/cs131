@@ -1,0 +1,2 @@
+Number of verified purchases in the Amazon Book Reviews: 229518
+Number of unverified purchases in the Amazon Book Reviews: 2876176
