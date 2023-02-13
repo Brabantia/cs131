@@ -1,0 +1,8 @@
+Review Count	Customer ID
+  21922		50122160	# This Customer has posted the most book reviews on the entire Amazon platform! It happens to be an organization, not one person: Midwest Book Review
+   9964 	50732546	# 2nd most book reviews on Amazon: Harriet Klausner
+   2664 	52615377	# 3rd most book reviews on Amazon: Donald Mitchell
+Review Count	Product (book)ID
+   4625 	043935806X	# most reviewed book on Amazon: Harry Potter and the Order of the Phoenix (Book 5) by J.K. Rowling 
+   3739 	0439139597	# 2nd most reviewed book on Amazon: Harry Potter and the Goblet of Fire (4) also by J.K. Rowling
+   2666 	0525947647	# 3rd most reviewed book on Amazon: Lies and the Lying Liars Who Tell Them by Al Franken

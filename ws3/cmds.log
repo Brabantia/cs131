@@ -1,0 +1,84 @@
+  330  mkdir ws3
+  331  dir
+  332  cd ws2
+  333  dir
+  334  copy
+  335  cpy
+  336  cp
+  337  cp --help
+  338  cp amazon_reviews_us_Books_v1_02.tsv ..
+  339  dir
+  340  cd ..
+  341  dir
+  342  mv amazon_reviews_us_Books_v1_02.tsv ws3
+  343  cd ws3
+  344  dir
+  345  head amazon_reviews_us_Books_v1_02.tsv 
+  346  cut --help
+  347  cut -c --help
+  348  head amazon_reviews_us_Books_v1_02.tsv | cut -d "\t" -f 2
+  349  head amazon_reviews_us_Books_v1_02.tsv | cut -d '\t' -f 2
+  350* head amazon_reviews_us_Books_v1_02.tsv | cut -d  2
+  351  head amazon_reviews_us_Books_v1_02.tsv | cut -d -f 2
+  352  head amazon_reviews_us_Books_v1_02.tsv | cut -d 2
+  353  head amazon_reviews_us_Books_v1_02.tsv | cut -f 2
+  354  sort --help
+  355  head amazon_reviews_us_Books_v1_02.tsv | cut -f 2 | sort
+  356  head amazon_reviews_us_Books_v1_02.tsv | cut -c "\n" 1
+  357  head amazon_reviews_us_Books_v1_02.tsv | cut -c "\\n" 1
+  358* head amazon_reviews_us_Books_v1_02.tsv | cut1
+  359  head --help
+  360  tail --help
+  361  wc --help
+  362  wc -l amazon_reviews_us_Books_v1_02.tsv 
+  363  tail -n --help
+  364  tail -n 1 amazon_reviews_us_Books_v1_02.tsv 
+  365  head --help
+  366  tail -n 3105520 amazon_reviews_us_Books_v1_02.tsv | head | cut -f 2 | sort
+  367  head --help
+  368  head -n 1000
+  369  dir
+  370  tail -n 3105520 amazon_reviews_us_Books_v1_02.tsv | head -n 100 | cut -f 2 | sort
+  371  tail -n 3105520 amazon_reviews_us_Books_v1_02.tsv | head -n 1000 | cut -f 2 | sort
+  372  sort --help
+  373  uniq --help
+  374  tail -n 3105520 amazon_reviews_us_Books_v1_02.tsv | cut -f 2 | sort > Sorted_customer_IDs.txt
+  375  head Sorted_customer_IDs.txt 
+  376  head -n 100 Sorted_customer_IDs.txt 
+  377  tail -n 3105520 amazon_reviews_us_Books_v1_02.tsv | cut -f 2 | uniq -c | sort > ws3.txt
+  378  dir
+  379  head ws3.txt 
+  380  ls -l
+  381  tail -n 3105520 amazon_reviews_us_Books_v1_02.tsv | cut -f 2 |sort | uniq -c | sort > ws3.txt
+  382  dir
+  383  head ws3
+  384  head ws3.txt 
+  385  tail -n 3105520 amazon_reviews_us_Books_v1_02.tsv | cut -f 2 |sort | uniq -c | sort | head -n 3 > ws3.txt
+  386  head ws3.txt 
+  387  tail -n 3105520 amazon_reviews_us_Books_v1_02.tsv | cut -f 4 |sort | uniq -c | sort | head -n 3 > ws3.txt
+  388  head ws3.txt 
+  389  tail -n 3105520 amazon_reviews_us_Books_v1_02.tsv | cut -f 2 |sort | uniq -c | sort | head -n 3 > ws3.txt
+  390  tail -n 3105520 amazon_reviews_us_Books_v1_02.tsv | cut -f 4 | sort | uniq -c | sort | head -n 3 >> ws3.txt
+  391  head ws3.txt 
+  392  tail -n 3105520 amazon_reviews_us_Books_v1_02.tsv | cut -f 2 | sort | uniq -c | head -n 3 > ws3.txt
+  393  tail -n 3105520 amazon_reviews_us_Books_v1_02.tsv | cut -f 4 | sort | uniq -c | head -n 3 >> ws3.txt
+  394  head ws3.txt 
+  395  head ws3.txt uniq --help
+  396  sort --help
+  397  tail -n 3105520 amazon_reviews_us_Books_v1_02.tsv | cut -f 2 | sort | uniq -c | sort -g | head -n 3 > ws3.txt
+  398  head ws3.txt 
+  399  tail -n 3105520 amazon_reviews_us_Books_v1_02.tsv | cut -f 2 | sort | uniq -c | sort -gr | head -n 3 > ws3.txt
+  400  head ws3.txt 
+  401  tail -n 3105520 amazon_reviews_us_Books_v1_02.tsv | cut -f f | sort | uniq -c | sort -gr | head -n 3 >> ws3.txt
+  402  tail -n 3105520 amazon_reviews_us_Books_v1_02.tsv | cut -f 4 | sort | uniq -c | sort -gr | head -n 3 >> ws3.txt
+  403  head ws3.txt 
+  404  dir
+  405  cat ws3.txt 
+  406  nano ws3.txt 
+  407  dir
+  408  cd ..
+  409  history
+  410  cd ..
+  411  cd cs131/ws3/
+  412  dir
+  413  history > cmds.log
