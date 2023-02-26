@@ -1,0 +1,91 @@
+  615  dir
+  616  rm Customers 
+  617  l
+  618  script ws4.txt
+  619  l
+  620  w
+  621  grep -E "52173832" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 > 52173832.txt
+  622  cat 52173832.txt
+  623  grep -E "0975599518" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 > 0975599518.txt
+  624  cat 0975599518.txt
+  625  bc --help
+  626  cat 0975599518.txt | bc +
+  627  cat 0975599518.txt | bc
+  628  ls | display
+  629  ls | sort | more
+  630  cs131_lecture_samples/
+  631  cd cs131_lecture_samples/
+  632  dir
+  633  ls | sort | more
+  634  l
+  635  w
+  636  r
+  637  ls -latr
+  638  dir
+  639  who
+  640  who | wc -l
+  641  who > exercise_2023_02_22.txt
+  642  cat exercise_2023_02_22.txt > wc -l
+  643  wc --help
+  644  wc -l exercise_2023_02_22.txt 
+  645  cat exercise_2023_02_22.txt 
+  646  wc -l < exercise_2023_02_22.txt 
+  647  who | wc -l
+  648  ls ./ | wc -l
+  649  ls -latr / | wc -l
+  650  dir
+  651  nano a.c
+  652  nano b.c
+  653  nano c.c
+  654  cat *.c | wc -c
+  655  who | tee users.lst
+  656  dir
+  657  cat users.lst 
+  658  rm users.lst 
+  659  who > users.lst > wc -l >> users.lst > cat
+  660  cat users.lst 
+  661  who
+  662  who | wc -l > users.lst
+  663  tee
+  664  who | tee
+  665  dir
+  666  who | tee /dev/tty | wc -c
+  667  mkfifo
+  668  mkfifo --help
+  669  mkfifo number1
+  670  ls
+  671  ls -latrrm number1 
+  672  rm number1 
+  673  dir
+  674  cd
+  675  pid
+  676  ps
+  677  ps -eo
+  678  pe -eo pid
+  679  ps -eo pid
+  680  ps -eo pid | wc -l
+  681  kill 9 1
+  682  history
+  683  clear
+  684  l
+  685  ls -latr
+  686  nano .bashrc
+  687  l
+  688  w
+  689  nano .bashrc
+  690  l
+  691  nano .bashrc
+  692  load --help
+  693  source ~/.bashrc
+  694  l
+  695  w
+  696  cd cs131
+  697  dir
+  698  cd ws4
+  699  dir
+  700  rm 0975599518.txt 
+  701  rm 52173832.txt 
+  702  rm t1_output.txt 
+  703  rm ws4.txt 
+  704  script ws4.txt
+  705  history > cmds.log
