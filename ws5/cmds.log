@@ -1,0 +1,29 @@
+  990  source .bashrc
+  991  l
+  992  qw
+  993  w
+  994  cd cs131
+  995  l
+  996  mkdir ws5
+  997  cp amazon_reviews_us_Books_v1_02.tsv ./ws5
+  998  l
+  999  cp --help
+ 1000  cp amazon_reviews_us_Books_v1_02.tsv ./ws5/amazon_reviews_us_Books_v1_02.tsv 
+ 1001  l
+ 1002  source .bashrc
+ 1003  l
+ 1004  cd cs131
+ 1005  l
+ 1006  mv amazon_reviews_us_Books_v1_02.tsv ./ws5
+ 1007  cd ws5
+ 1008  l
+ 1009  head --help
+ 1010  for line in head -n 200 amazon_reviews_us_Books_v1_02.tsv; do
+ 1011  for line in tail -n 3105520 amazon_reviews_us_Books_v1_02.tsv | cut -f 2 | sort | uniq -c | sort -gr ;
+ 1012  script ws5
+ 1013  dir
+ 1014  mv amazon_reviews_us_Books_v1_02.tsv ..
+ 1015  l
+ 1016  mv ws5 ws5.txt
+ 1017  l
+ 1018  history > cmds.log
