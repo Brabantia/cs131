@@ -1,0 +1,47 @@
+ 1001  cp --help
+ 1002  cp /home/test/A1/downloaded_tweets_extend_nolf2.tsv ~
+ 1003  cp /home/test/A1/downloaded_tweets_extend_original_nolf2.tsv ~
+ 1004  source ./.bashrc
+ 1005  l
+ 1006  cd cs131
+ 1007  l
+ 1008  mkdir a2
+ 1009  l
+ 1010  cd ..
+ 1011  mv downloaded_tweets_extend_nolf2.tsv ./cs131/a2
+ 1012  mv downloaded_tweets_extend_original_nolf2.tsv ./cs131/a2
+ 1013  l
+ 1014  cd cs131
+ 1015  l
+ 1016  cd a2
+ 1017  l
+ 1018  head downloaded_tweets_extend_nolf2.tsv 
+ 1019  id      author  date    hashtags        referenced      in_reply_to_user_id     public_metrics  text_nolf
+ 1020  1520543208614334465     308045021       2022-04-30 23:18:45+00:00       awesomePeopleOnTwitter                          "On top of the chocolate, @benjean2 also included these for my Spanish learning child. I have another child going into Spanish for 2 years and these books, lovingly given, will be out to good use. I hope my kids will be worthy of her kindness. ❤️ #awesomePeopleOnTwitter https://t.co/rGiSjqZXoe"
+ 1021  1520503332246376448     308045021       2022-04-30 20:40:18+00:00       "journalism,NPR"        [<ReferencedTweet id=1513654494504136709 type=retweeted]                        RT @HPM_ChristinaL: Really proud of our reporters. Yet another recognition of their work. Way to go! #journalism #NPR #AwardWinningJournali…
+ 1022  1520503283470815232     308045021       2022-04-30 20:40:07+00:00               [<ReferencedTweet id=1513774168348704770 type=retweeted]                        RT @HPM_ChristinaL: “We as a society have reached a very ugly place where empathy is a foreign concept and where we refuse to view professi…
+ 1023  1520168272896962562     308045021       2022-04-29 22:28:54+00:00       "LC,exercise"   [<ReferencedTweet id=1520168270283915264 type=replied_to]       308045021               Workouts &amp; ample sleep. Sigh….this is great news and bad. Maybe I should switch to chi gong or pure yoga. Biking can be 2x’s/week. Lots to think abt. But I’m happier wo the inflammation induced pain. Hopefully my appt w a rheumatologist will yield answers #LC #exercise
+ 1024  1520053412968210432     308045021       2022-04-29 14:52:29+00:00       buddhism                                This section is very profound. Many atrocities were committed in the name of “god”. Could this be another reason that no wars was fought in the name of Buddha? #buddhism https://t.co/I6XwhH9wnj
+ 1025  1520044444204032001     308045021       2022-04-29 14:16:51+00:00       buddhism                                "I took a break from the book Imperial Reckoning, to reconnect w presence and grounding. Human suffering &amp; violence can rob me of peace &amp; balance. My new favorite book is this ..:: #buddhism https://t.co/GNoR5ZFhVs"
+ 1026  1519870977311715328     308045021       2022-04-29 02:47:33+00:00       obgyntwitter    [<ReferencedTweet id=1519864927997075458 type=retweeted]                        RT @falnyx: I sadly cannot apply to this but if you are an obgyn applicant that went unmatched and do not require visa #obgyntwitter #obgyn…
+ 1027  1519788687957049344     308045021       2022-04-28 21:20:34+00:00       busymom                         "Day 4 of no exercise and bilateral hand inflammation has remained the same. Sighhhhhhh…  oh well. I wish I could say that I’ve been taking it easy, but a busy mom is never out of things to do around the house. #busymom https://t.co/d2M4CGiiPa"
+ 1028  grep --help
+ 1029  grep "type=replied_to]" downloaded_tweets_extend_original_nolf2.tsv | wc -l
+ 1030  cut --help
+ 1031  grep "type=replied_to]" downloaded_tweets_extend_original_nolf2.tsv | cut -f 2 | sort | uniq -c
+ 1032  grep "type=replied_to]" downloaded_tweets_extend_original_nolf2.tsv | cut -f 2 | sort | uniq -c | sort
+ 1033  uniq --help
+ 1034  sort --help
+ 1035  grep "type=replied_to]" downloaded_tweets_extend_original_nolf2.tsv | cut -f 2 | sort | uniq -c | sort -h
+ 1036  sort --help
+ 1037*  grep "type=replied_to]" downloaded_tweets_extend_original_nolf2.tsv | cut -f 2 | sort | uniq -c | sort -rh
+
+The above command will answer task 1 if the solution outcome of that one is piped on into a "head" command to chop off all the other results.... I'll just hope the script captured everything, because clearly the history command is useless...
+
+ 1038  script a2.txt
+ 1039  nano a2.txt
+ 1040  l
+ 1041  nano a2.txt
+ 1042  history > cmds.log
+
+The commands used for the homework are missing...
