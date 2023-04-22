@@ -1,0 +1,21 @@
+TASK 1
+  948  sed -E '/\d*\s*\d*\s*\d*\s*[NY]\s*[Nn]\s*/ p' amazon_reviews_us_Books_v1_02.tsv
+
+TASK 2
+  953  sed -E '/\d*\s*\d*\s*\d*\s*[NY]\s*[Nn]\s*/ p' amazon_reviews_us_Books_v1_02.tsv > unverified.txt
+  955  head -n 20 unverified.txt > unverified_head20.txt
+
+TASK 3
+ 1013  sed -En '/1844161560/ p' unverified.txt > 1844161560.txt
+
+TASK 4
+ 1074  sed -En 's/,/ /p' 1844161560.txt > 1844161560_task5
+ 1075  sed -En 's/./ /p' 1844161560_task5 > 1844161560_task5.
+ 1076  sed -En 's/;/ /p' 1844161560_task5. > 1844161560_task5.t
+ 1077  sed -En 's/ to / /p' 1844161560_task5.t > 1844161560_task5.txt
+
+TASK 5
+ 1081  sed -En 's/<.* \/>/ /p' 1844161560.txt > 1844161560_task6.txt
+
+TASK 6
+ 1082  history > cmnd.log

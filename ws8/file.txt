@@ -1,0 +1,9 @@
+Line 1	I am very interesting!
+Line 2	I am even more interesting!
+Line 3	Fascinating man!
+Line 4	Seriously! I am the most interesting line!
+Line 5	Wow! Have you seen line 4? He seems to be the most self-obsessed yet!
+Line 6	Geez, tell me about it.
+Line 7	What's with all these people?
+Line 8	How do you do?
+Line 9	What the heck is going on here?
