@@ -9,16 +9,18 @@ testCount=$((lcount - trainCount))
 # Standardize delimiter
 header=$(head -n 1 $1)
 # check for the presence of a space, semicolon, pipe, tab, or colon
-delim=','
-echo delim is $delim
-delim=$(echo $header | grep -q ';' && echo ';')
-echo delim is $delim
-delim=$(echo $header | grep -q '|' && echo '|')
-echo delim is $delim
-delim=$(echo $header | grep -q '\t' && echo '\t')
-echo delim is $delim
-#delim=$(echo $header | grep -q ':' && echo '\:')
-#echo delim is $delim
+if [ $(cat $header | grep -q ';') == 1 ] ; then
+   delim=';'
+elif [ cat $header | grep -q '\' ] ; then
+   delim='\'
+elif [ cat $header | grep -q '\t' ] ; then
+   delim='	'
+elif [ cat $header | grep -q ':' ] ; then
+   delim=':'
+else
+   delim=','
+fi
+   echo delim is $delim
 # replace delims if not a comma
 if [ "$delim" != "," ]; then
    sed -i "s/$(echo $delim)/,/g" $1
