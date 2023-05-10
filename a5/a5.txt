@@ -1,0 +1,26 @@
+ 1000  cd a5
+ 1001  ls
+ 1002  wget https://archive.ics.uci.edu/ml/machine-learning-databases/thyroid-disease/sick.data
+ 1003  ls
+ 1004  awk -F, '{OFS=",";print $10,$11,$14}' sick.data > data.csv
+ 1005  ls
+ 1006  nano sick.data
+ 1007  nano data.csv
+ 1008  wc -l sick.data
+ 1009  head -n 5
+ 1010  head -n 5 data.csv 
+ 1011  grep -E "t,[tf],t" data.csv | wc -n
+ 1012  grep -E "t,[tf],t" data.csv | wc -l
+ 1013  grep -E "t,t,t" data.csv | wc -l
+ 1014  head -n 5 data.csv 
+ 1015  grep -E "f,f,t" data.csv | wc -l
+ 1016  grep -E "f,t,f" data.csv | wc -l
+ 1017  grep -E "t,f,f" data.csv | wc -l
+ 1018  grep -E "t,[tf],f" data.csv | wc -l
+ 1019  grep -E "t,[tf],[tf]" data.csv | wc -l
+ 1020  grep -E "[tf],[t],[tf]" data.csv | wc -l
+ 1021  grep -E "[tf],[t],[t]" data.csv | wc -l
+ 1022  grep -E "[t],[tf],[t]" data.csv | wc -l
+ 1040  grep -E "[f],[f],[t]" data.csv | wc -l
+ 1041  grep -E "[ft],[tf],[t]" data.csv | wc -l
+ 1042  history > a5.txt
