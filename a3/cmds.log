@@ -1,0 +1,18 @@
+Task 1
+  845  cat downloaded_tweets_extend_nolf2.tsv | grep -E "type=replied_to" | cut -f 2,6 > task1.txt
+
+Task 2
+  864  cat task1.txt | cut -f 2 | uniq -c | sort -rn | grep -E "\s[3-9]\s+[0-9]*" >> task2.txt
+
+**SETUP GNUPLOT AND CLEAN UP TASK2.TXT**
+
+ 1033  ./gnuplot 
+
+**RENDER H1.SVG AND H4.SVG**
+
+**MOVE H1 AND H4 TO A3 DIRECTORY**
+
+ 1035  mv h1.svg ../../cs131/a3/
+ 1036  mv h4.svg ../../cs131/a3/
+ 1038  mv task2.csv ../../cs131/a3/
+ 1039  mv task2.txt ../../cs131/a3/
